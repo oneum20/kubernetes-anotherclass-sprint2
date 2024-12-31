@@ -90,7 +90,8 @@ volumeMounts:
   - name: secret-datasource
     mountPath: /usr/src/myapp/datasource
 
-nodeSelector: {}
+nodeSelector:
+  kubernetes.io/hostname: master
 
 tolerations: []
 
